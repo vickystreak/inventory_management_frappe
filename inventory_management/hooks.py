@@ -215,3 +215,8 @@ app_license = "MIT"
 # auth_hooks = [
 #	"inventory_management.auth.validate"
 # ]
+doc_events = {
+    "Product Movement": {
+        "on_update": "inventory_management.inventory_balance.update_inventory_balance"
+    }
+}
